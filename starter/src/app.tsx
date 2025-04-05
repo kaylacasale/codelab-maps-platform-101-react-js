@@ -412,7 +412,7 @@ const root = createRoot(document.getElementById("app")!);
 
 root.render(
   <APIProvider
-    apiKey="AIzaSyA7vBqqchdovNiMJaWqbjTLXiV_Q3LlyVQ"
+    apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}
     libraries={["places"]}
   >
     <App />
